@@ -1,0 +1,4 @@
+/.deps.rules
+/.test.deps
+/ebin/
+/priv/
