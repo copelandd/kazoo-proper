@@ -47,6 +47,7 @@ quickcheck_export(Module, Function) ->
 
 -spec run_seq_modules() -> 'no_return'.
 run_seq_modules() ->
+    application:ensure_all_started('kazoo_proper'),
     _ = [run_seq_module(M) || M <- modules()],
     'no_return'.
 
